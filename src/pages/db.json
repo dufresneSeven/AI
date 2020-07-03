@@ -1,0 +1,26 @@
+{
+    "user":[
+        {
+            "name":"liuhuan",
+            "age":12
+        },
+        {
+            "name":"zhangsan",
+            "age":3
+        },
+        {
+            "name":"lisi",
+            "age":4
+        }
+    ],
+    "province":[
+        {
+            "name":"shanxi",
+            "centen":"taiyuan"
+        },
+        {
+            "name":"shanxi",
+            "centen":"taiyuan"
+        }
+    ]
+}
