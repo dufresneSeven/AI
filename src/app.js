@@ -1,11 +1,11 @@
 
-// import Vue from 'vue';
-// import VueRouter from 'vue-router';
-// import router from './routes/router.js';
-// Vue.use(VueRouter)
+import Vue from 'vue/dist/vue.esm';
+import router from './routes/router.js';
+import App from './app.vue';
 
-// const app = new Vue({
-//     router
-//   }).$mount('#app')
+const app = new Vue({
+    router,
+    components:{App},
+    render:h=>h(App)
+  }).$mount('#app')
 
-console.log('hello world');

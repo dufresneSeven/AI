@@ -31,13 +31,13 @@ const config = {
     plugins: [
         new HtmlWebpackPlugin({template: './src/index.html'}),
         new VueLoaderPlugin(),
-        new webpack.DefinePlugin({
-          'process.env':{
-            NODE_ENV:"development",
-          }
-    
-        }),
-      ]
+      
+      ],
+      resolve: {
+        alias: {
+            'vue$': 'vue/dist/vue.esm.js' //内部为正则表达式  vue结尾的
+        }
+    }
 }
 
 config.devtool='#cheap-module-eval-source-map',
